@@ -11,7 +11,7 @@ class Cc360 < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/achton/cc360/releases/download/v0.2.0/cc360_0.2.0_darwin_amd64.tar.gz"
-      sha256 "de31fa2445569f59a041eed929f8c2773e069f959611c779f325bd4f7f0fa241"
+      sha256 "30e802a7e2403d3a9bc69af586d3f27c4b30d2b49ac00ee3a14ce42c9268b5c5"
 
       define_method(:install) do
         bin.install "cc360"
@@ -19,7 +19,7 @@ class Cc360 < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/achton/cc360/releases/download/v0.2.0/cc360_0.2.0_darwin_arm64.tar.gz"
-      sha256 "1bcf8ecbdcb415d221269565df6307472b2f5b2b9f1f0610941b59ea1ca23a14"
+      sha256 "a0d7573d86a6ad17c2d871e31493840e4e10903bbbe021c618fe1100e97927c9"
 
       define_method(:install) do
         bin.install "cc360"
@@ -30,14 +30,14 @@ class Cc360 < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/achton/cc360/releases/download/v0.2.0/cc360_0.2.0_linux_amd64.tar.gz"
-      sha256 "98f1c9136c8a8b07d2745d6a48b22ed5aa926c78fd18ad8b0136f51e13c8d81a"
+      sha256 "bc90104977eafac7711d3b323e4b03a345badaa4cd6bde7b87f8806ecc8fd433"
       define_method(:install) do
         bin.install "cc360"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/achton/cc360/releases/download/v0.2.0/cc360_0.2.0_linux_arm64.tar.gz"
-      sha256 "26d0d5a008f80ae54361d6fd358045348c25ce41720b9800f0df938ceead744a"
+      sha256 "51f0e56509a2f6af91cadfa1d14e7d9fc6efc6499d4cc46b50da4ff5a8712598"
       define_method(:install) do
         bin.install "cc360"
       end
