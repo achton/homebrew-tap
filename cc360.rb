@@ -5,21 +5,21 @@
 class Cc360 < Formula
   desc "Terminal UI for browsing and resuming Claude Code sessions"
   homepage "https://github.com/achton/cc360"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/achton/cc360/releases/download/v0.2.1/cc360_0.2.1_darwin_amd64.tar.gz"
-      sha256 "c276c587bc0cc4772b076b628d67935eb17c3576cbadb7f8c5321398b7acc904"
+      url "https://github.com/achton/cc360/releases/download/v0.2.2/cc360_0.2.2_darwin_amd64.tar.gz"
+      sha256 "739f002ee89b4298455390622b11453b21cc2dcb94d62c2cc5ecaba6120cce44"
 
       define_method(:install) do
         bin.install "cc360"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/achton/cc360/releases/download/v0.2.1/cc360_0.2.1_darwin_arm64.tar.gz"
-      sha256 "adf6580496b636d36dd89470db9f852c66ce51dff7b8de2b091636d2b4b1ff53"
+      url "https://github.com/achton/cc360/releases/download/v0.2.2/cc360_0.2.2_darwin_arm64.tar.gz"
+      sha256 "32db76255353186bfd1431824bf2bfafc249316d27a5ab86bd29497032e4e59f"
 
       define_method(:install) do
         bin.install "cc360"
@@ -29,15 +29,15 @@ class Cc360 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/achton/cc360/releases/download/v0.2.1/cc360_0.2.1_linux_amd64.tar.gz"
-      sha256 "a57ee570cc4980311a027c1aff374b4337c2f2e8127d80b85de3f40d316403d8"
+      url "https://github.com/achton/cc360/releases/download/v0.2.2/cc360_0.2.2_linux_amd64.tar.gz"
+      sha256 "1188d1fdb735c6fb88e0ead5eeb657cd0b3cd623f65600800e8a4cba74452db6"
       define_method(:install) do
         bin.install "cc360"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/achton/cc360/releases/download/v0.2.1/cc360_0.2.1_linux_arm64.tar.gz"
-      sha256 "23a1775b81c7a10b4a4601999b3953ebf47cd05b67a299faf0e28ea1f6dc6d2a"
+      url "https://github.com/achton/cc360/releases/download/v0.2.2/cc360_0.2.2_linux_arm64.tar.gz"
+      sha256 "c8bb03a2ee49cb0c2cf5cc4460f082eccad3f03f86bfc7ddbc6c7aa8dbb4540b"
       define_method(:install) do
         bin.install "cc360"
       end
